@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
+    <title>DEL LEVIN</title>
+    <meta name="description" content="95后，全干开发者">
+    <meta name="keywords" content="Java,Spring,个人博客，微信小程序，博客">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="stylesheet" href="./static/css/jquery.fancybox.css">
+    <script src="./static/js/jquery.min.js"></script>
+    <script src="./static/js/jquery.fancybox.js"></script>
+    <script src="./static/js/instantpage.js" ></script>
+    <script src="./static/js/lazysizes.min.js" async></script>
+    
+    <!--鼠标点击效果-->
+    <script src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/maodian.js"></script>
+    <!--   今日诗词   -->
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <!-- 网站访问计数 -->
+    <script defer src="https://events.vercount.one/js"></script>
+    <!--我的网站统计-->
+    <!--<script async defer data-website-id="39e3e05e-b07f-487f-bc8d-669034d44758" src="https://tongji.ittoolman.com/umami.js"></script>-->
+
+    <script type="text/javascript">
+        if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
+            alert('朋友，上古浏览器不支持呢~');
+        }
+    </script>
+</head>
+
+<body>
+    <div id="body-wrap">
+        <nav class="not_index_bg" id="nav" style="background-image:url()">
+            <div id="page_site-info">
+                <div id="site-title">
+                    <span class="blogtitle">DEL LEVIN</span>
+                    <script>
+                        var typed = new Typed(".blogtitle", {
+                            strings: ['求知若饥，虚心若愚', 'Stay Hungry Stay Foolish'],
+                            startDelay: 300,
+                            typeSpeed: 100,
+                            loop: true,
+                            backSpeed: 50,
+                            showCursor: true
+                        });
+                    </script>
+                </div>
+            </div>
+        </nav>
+        <main id="content-outer">
+            <div class="layout_page" id="content-inner">
+                <div class="aside_content" id="aside_content">
+                    <div class="card-widget card-info">
+                        <div class="card-content">
+                            <div class="card-info-avatar is-center">
+                                <img class="avatar-img"
+                                    src="./static/img/touxiang.png"
+                                    alt="avatar">
+                                <div class="author-info__name">Del Levin</div>
+                                <div class="author-info__description">95后，全干开发者，略懂运营，<s>学生</s>，躺平</div>
+                            </div>
+                            <div class="card-info-social-icons is-center">
+                                <a class="social-icon" href="https://github.com/dellevin" target="_blank">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                                <a class="social-icon" href="https://weibo.com/u/6094785105" target="_blank">
+                                    <i class="fa fa-weibo"></i>
+                                </a>
+                                <a class="social-icon" href="https://t.me/levin092" target="_blank">
+                                    <i class="fa fa-telegram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-widget card-announcement">
+                        <div class="card-content">
+                            <div class="item-headline">
+                                <i class="fa fa-connectdevelop" aria-hidden="true"></i>
+                                <span style="font-weight: 1000;">联系方式</span>
+                            </div>
+                            <div class="selectable">
+                                <span style="font-weight: 1000;">微信 ：</span> E-Levin_
+                                </br>
+                                <span style="font-weight: 1000;">扣扣 ：</span> 1754084631
+                                </br>
+                                <span style="font-weight: 1000;">邮箱 ： </span>dellevin99@gmail.com
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-widget card-announcement">
+                        <div class="card-content">
+                            <div class="item-headline">
+                                <i class="fa fa-pagelines" aria-hidden="true"></i>
+                                <span>诗词</span>
+                            </div>
+                            <div id="jinrishici-sentence"></div>
+                        </div>
+                    </div>
+                    <div class="card-widget card-announcement">
+                        <div class="card-content">
+                            <div class="item-headline">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                <span>经历</span>
+                            </div>
+                            <div>
+                                <div class="left-div left-time">
+                                    <ul id="line">
+                                        <li>
+                                            <div class="focus"></div>
+                                            <div>开始背上房贷
+                                            </div>
+                                            <div>2025.07</div>
+                                        </li>
+                                        
+                                        <li>
+                                            <div class="focus"></div>
+                                            <div>来到济南工作
+                                            </div>
+                                            <div>2023.08</div>
+                                        </li>
+                                        
+                                        <li>
+                                            <div class="focus"></div>
+                                            <div>大学毕业初入社会</div>
+                                            <div>2023.07</div>
+                                        </li>
+                                        
+                                        <li>
+                                            <div class="focus"></div>
+                                            <div>购买了第一台服务器</div>
+                                            <div>2020.02</div>
+                                        </li>
+                                        
+                                        <li>
+                                            <div class="focus"></div>
+                                            <div>高中毕业步入大学</div>
+                                            <div>2018.07</div>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-widget card-webinfo">
+                        <div class="card-content">
+                            <div class="item-headline">
+                                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                                <span>站点信息</span>
+                            </div>
+                            <div class="webinfo">
+                                <div class="webinfo-item">
+                                    <div class="webinfo-site-uv-name">本站访客数 :</div>
+                                    <div class="webinfo-site-uv-count" id="vercount_value_site_uv"></div>
+                                </div>
+                                <div class="webinfo-item">
+                                    <div class="webinfo-site-name">本站总访问量 :</div>
+                                    <div class="webinfo-site-pv-count" id="vercount_value_site_pv"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <article id="page">
+                    <div class="article-container">
+                        <h2>自述 · 平凡</h2>
+                        <div>
+                            你好！我叫白荼，河北衡水人，土生土长的北方汉子，毕业于一所不知名的二本院校。信息管理与信息系统专业。
+                            自学java、vue、linux、mysql、python、逆向软件等技术，会些PS图片、PR、AE视频制作，也做过系统，剪过网线，搞过plc耍过单片机，维护修理过服务器，
+                            运营过公众号和网站等等。可谓是会，但只会一点点。
+                        <br><br>
+                            别人都觉得我是个大佬，其实我就是个小菜鸡。平时也爱玩玩游戏看看书，
+                            写写自己的顺手的小工具什么，毕竟懒惰是我的生产力。我也经常混迹于各大网络论坛并在各个技术博主下面直呼“大佬666”、“大佬牛牛牛”。
+                            博客也在断断续续中更新。主要是记录生活随笔和碰到的技术难题。
+                            
+                            目前呢，是买了三个域名（ittoolman.top （github博客）、 ittoolman.com （已经移交给我的同学）、iletter.top)，国外服务器（代理），腾讯云（数据同步，个人博客），阿里云windows服务器（过期不准备续费了）三台。
+                        <br><br>
+                           至于为什么喜欢ittoolman这个呢？这就说来话长了.之前的域名是wonder1999.com这个，那是我大学第一次买域名和服务器，对技术有着极大的热情。后来随着会的技术越来越多，我也不吝啬展示自己的能力。
+                            帮了很多人，也做过很多事情，慢慢的，我感觉我像一个工具人一样，召之即来挥之即去，像一个机器人一样的三点一线的活着。这就是
+                            ittoolman这个域名为啥要买这个。再者就是iletter，灵感来源自晏殊的蝶恋花中的“欲寄彩笺兼尺素,山长水阔知何处”。可以说域名对我来说不仅仅是一个个简单的字母，更是我人生阶段的总结。
+                        <br><br>
+                           如今的我已步入社会开始工作，我很庆幸我还是对技术有着极大的热情，虽然藉藉无名，但是我还是一直会保持着对技术的热爱，对生活的热爱！
+                        </div>
+                        <hr>
+                        <h2>我的网站</h2>
+                        <div class="auto-resize flex-container">
+                            
+                            <a class="projectItem a" target="_blank" href="https://www.ittoolman.top/">
+                                <div class="projectItemLeft">
+                                    <h1>Github博客</h1>
+                                    <p>技术随笔</p>
+                                </div>
+                            </a>
+                            <a class="projectItem a" target="_blank" href="https://blog.iletter.top/">
+                                <div class="projectItemLeft">
+                                    <h1>Typecho博客</h1>
+                                    <p>记录生活</p>
+                                </div>
+                            </a>
+                            
+                            <a class="projectItem a" target="_blank" href="https://img.iletter.top/">
+                                <div class="projectItemLeft">
+                                    <h1>简单图床</h1>
+                                    <p>EasyImage</p>
+                                </div>
+                            </a>
+                            
+                            <a class="projectItem a" target="_blank" href="https://bitwarden.iletter.top/">
+                                <div class="projectItemLeft">
+                                    <h1>密码保存</h1>
+                                    <p>bitwarden搭建</p>
+                                </div>
+                            </a>
+                            
+                        </div>
+                        <hr>
+                        <h2>常用工具</h2>
+                        <div class="skill">
+                            <div class="skillsImg">
+                                <img src="./static/img/tools/postman.png" alt="">
+                                <div class="skillsImgText">Postman</div>
+                            </div>
+                            <div class="skillsImg">
+                                <img src="./static/img/tools/icons8-intellij-idea.png" alt="">
+                                <div class="skillsImgText">IDEA</div>
+                            </div>
+                            <div class="skillsImg">
+                                <img src="./static/img/tools/pycharm.png" alt="">
+                                <div class="skillsImgText">PyCharm</div>
+                            </div>
+                            <div class="skillsImg">
+                                <img src="./static/img/tools/vscode.png" alt="">
+                                <div class="skillsImgText">VsCode</div>
+                            </div>
+                            <div class="skillsImg">
+                                <img src="./static/img/tools/hbuilderx.png" alt="">
+                                <div class="skillsImgText">HbuilderX</div>
+                            </div>
+                            <div class="skillsImg">
+                                <img src="./static/img/tools/navicate.png" alt="">
+                                <div class="skillsImgText">Navicate</div>
+                            </div>
+                            <div class="skillsImg">
+                                <img src="./static/img/tools/Typora.png" alt="">
+                                <div class="skillsImgText">Typora</div>
+                            </div>
+                            <div class="skillsImg">
+                                <img src="./static/img/tools/Xshell.png" alt="">
+                                <div class="skillsImgText">Xshell</div>
+                            </div>
+                            <div class="skillsImg">
+                                <img src="./static/img/tools/VMware.png" alt="">
+                                <div class="skillsImgText">VMware</div>
+                            </div>
+                            <div class="skillsImg">
+                                <img src="./static/img/tools/github.png" alt="">
+                                <div class="skillsImgText">Github</div>
+                            </div>
+                            
+                            <div class="skillsImg">
+                                <img src="./static/img/tools/photoshop.png" alt="">
+                                <div class="skillsImgText">PhotoShop</div>
+                            </div>
+                            <div class="skillsImg">
+                                <img src="./static/img/tools/premiere.png" alt="">
+                                <div class="skillsImgText">Premiere</div>
+                            </div>
+                            <div class="skillsImg">
+                                <img src="./static/img/tools/Ae.png" alt="">
+                                <div class="skillsImgText">Ae</div>
+                            </div>
+                            <div class="skillsImg">
+                                <img src="./static/img/tools/CE.png" alt="">
+                                <div class="skillsImgText">CheatEngine</div>
+                            </div>
+                            <div class="skillsImg">
+                                <img src="./static/img/tools/x64dbg.png" alt="">
+                                <div class="skillsImgText">x64dbg</div>
+                            </div>
+                            <div class="skillsImg">
+                                <img src="./static/img/tools/music.png" alt="">
+                                <div class="skillsImgText">Netease</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </main>
+        <footer id="footer">
+            <div id="footer-wrap">
+                <div class="copyright"><a href="http://beian.miit.gov.cn">冀ICP备2025122609号</a> &copy;2020 - 2024 BY Del Levin </div>
+                <p style="margin-top: 10px">本站由 <a href="https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referral" target="_blank" rel="noopener"><img class="alignnone" style="width: 50px" src="./static/img/又拍云_logo5.png"  ></a> 提供CDN加速/云存储服务</p>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript">
+        console.clear();
+        console.log("%c 有朋自远方来, 不亦说乎.", "background:#24272A; color:#ffffff", "");
+        (function ($) {
+            $.fn.snow = function (options) {
+                var $flake = $('<div id="snowbox" />').css({ 'position': 'absolute', 'z-index': '9999', 'top': '-50px' }).html('&#10052;'),
+                    documentHeight = $(document).height(),
+                    documentWidth = $(document).width(),
+                    defaults = {
+                        minSize: 8,
+                        maxSize: 15,
+                        newOn: 1000,
+                        flakeColor: "#AFDAEF"
+                    },
+                    options = $.extend({}, defaults, options);
+                var interval = setInterval(function () {
+                    var startPositionLeft = Math.random() * documentWidth - 100,
+                        startOpacity = 0.5 + Math.random(),
+                        sizeFlake = options.minSize + Math.random() * options.maxSize,
+                        endPositionTop = documentHeight - 200,
+                        endPositionLeft = startPositionLeft - 500 + Math.random() * 500,
+                        durationFall = documentHeight * 10 + Math.random() * 5000;
+                    $flake.clone().appendTo('body').css({
+                        left: startPositionLeft,
+                        opacity: startOpacity,
+                        'font-size': sizeFlake,
+                        color: options.flakeColor
+                    }).animate({
+                        top: endPositionTop,
+                        left: endPositionLeft,
+                        opacity: 0.2
+                    }, durationFall, 'linear', function () {
+                        $(this).remove()
+                    });
+                }, options.newOn);
+            };
+        })(jQuery);
+        $(function () {
+            $.fn.snow({
+                minSize: 5, /* 定义雪花最小尺寸 */
+                maxSize: 20,/* 定义雪花最大尺寸 */
+                newOn: 700  /* 定义密集程度，数字越小越密集 */
+            });
+        });
+    </script>
+</body>
+
+</html>

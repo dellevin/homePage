@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你好，我是白荼</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', 'STSong', serif;
+            line-height: 1.8;
+            color: #333;
+            background-color: #f8f8f8;
+            padding: 20px;
+        }
+
+        .letter-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 2px;
+        }
+
+        .letter-header {
+            text-align: right;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .date {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .sender {
+            font-size: 14px;
+            color: #999;
+        }
+
+        .letter-title {
+            text-align: center;
+            font-size: 28px;
+            margin: 30px 0;
+            color: #222;
+            font-weight: normal;
+        }
+
+        .letter-content {
+            font-size: 16px;
+            margin: 30px 0;
+            text-align: justify;
+        }
+
+        .letter-content p {
+            margin-bottom: 20px;
+            text-indent: 2em;
+        }
+
+        .letter-signature {
+            text-align: right;
+            margin-top: 50px;
+        }
+
+        .signature-name {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .signature-title {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .letter-footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .letter-container {
+                padding: 20px;
+                margin: 10px;
+            }
+            
+            .letter-title {
+                font-size: 24px;
+            }
+            
+            .letter-content {
+                font-size: 15px;
+            }
+        }
+
+        /* 信纸纹理效果 */
+        .letter-container {
+            background-image: 
+                linear-gradient(transparent 29px, #f0f0f0 30px);
+            background-size: 100% 30px;
+        }
+
+        /* 首行不缩进 */
+        .letter-content p:first-child {
+            text-indent: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="letter-container">
+        <div class="letter-header">
+            <div class="date">2024年1月15日</div>
+            <div class="sender">发信人：张三</div>
+        </div>
+
+        <h1 class="letter-title">致亲爱的朋友</h1>
+
+        <div class="letter-content">
+            <p>见字如面，展信舒颜。</p>
+            
+            <p>时光荏苒，转眼间我们已经许久未曾联系。每当夜深人静时，总会想起我们一起度过的那些美好时光。那些在校园里漫步的日子，那些为了理想而奋斗的岁月，如今回想起来，依然温暖如初。</p>
+            
+            <p>最近的生活平淡而充实，工作虽然忙碌，但内心却格外宁静。我常常在想，人生的意义或许就在于这些平凡的日子中，在于我们如何对待每一个当下。正如你曾经说过的那句话："生活不是等待风暴过去，而是要学会在雨中起舞。"</p>
+            
+            <p>希望你一切都好，愿你在远方也能感受到这份来自故友的问候。无论我们身在何处，友谊的纽带永远将我们紧紧相连。</p>
+            
+            <p>期待着下一次的相聚，期待着再次聆听你的人生感悟。愿岁月不老，友谊长存。</p>
+        </div>
+
+        <div class="letter-signature">
+            <div class="signature-name">此致</div>
+            <div class="signature-name">敬礼！</div>
+            <div class="signature-name" style="margin-top: 30px;">李四</div>
+            <div class="signature-title">友人</div>
+        </div>
+
+        <div class="letter-footer">
+            愿你被这个世界温柔以待
+        </div>
+    </div>
+</body>
+</html>
